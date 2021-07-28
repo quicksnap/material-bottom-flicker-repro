@@ -8,7 +8,6 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import * as React from "react";
-
 import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
 import TabOneScreen from "../screens/TabOneScreen";
@@ -67,7 +66,7 @@ function TabOneNavigator() {
       <TabOneStack.Screen
         name="TabOneScreen"
         component={TabOneScreen}
-        options={{ headerTitle: "Tab One Title" }}
+        options={{ headerTitle: "Tab One Title", headerShown: false }}
       />
     </TabOneStack.Navigator>
   );
@@ -81,7 +80,7 @@ function TabTwoNavigator() {
       <TabTwoStack.Screen
         name="TabTwoScreen"
         component={TabTwoScreen}
-        options={{ headerTitle: "Tab Two Title" }}
+        options={{ headerTitle: "Tab Two Title", headerShown: false }}
       />
     </TabTwoStack.Navigator>
   );
